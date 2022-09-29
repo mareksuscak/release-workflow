@@ -1,0 +1,25 @@
+{
+  "name": "release-workflow",
+  "version": "0.0.0-development",
+  "description": "This is an experimental implementation of a semi-automated release workflow based on PR descriptions.",
+  "scripts": {
+    "commit": "cz",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mareksuscak/release-workflow.git"
+  },
+  "homepage": "https://github.com/mareksuscak/release-workflow#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^19.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
